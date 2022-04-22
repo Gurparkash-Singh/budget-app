@@ -24,7 +24,8 @@ module.exports = {
     },
     devtool: "eval-cheap-module-source-map",
     devServer: {
-        static: './public',
+        static: path.join(__dirname, 'public'),
+        historyApiFallback: true,
         port: 3000
     }
 }
